@@ -5095,6 +5095,14 @@ table tfoot tr td {
   padding-top: 17px;
 }
 
+.top-bar input[type="text"] {
+  width: 11em;
+}
+
+.contain-to-grid .top-bar {
+  margin-bottom: 40px;
+}
+
 h4.subheader, ol.commentlist cite.subheader.fn {
   margin-top: -1em;
 }
