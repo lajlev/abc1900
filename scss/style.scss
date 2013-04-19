@@ -12,14 +12,11 @@
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
-/* Start to customize Reverie */
-
-// add some extra style to row to beautify custom background image
-header.row,
-.container.row,
-.row.full-width {
-	background-color: rgba(255,255,255,0.9);
+/* Start to customizing */
+.top-bar-section .dropdown li a {
+	padding-top: 17px;
 }
+
 
 // adjusting header
 h4.subheader {

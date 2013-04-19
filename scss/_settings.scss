@@ -4,3 +4,81 @@
 // doc page. We tried to name them to where they'd make sense just by reading them.
 // Go to http://foundation.zurb.com/docs/ to find what you need.
 
+//
+// Variables
+//
+
+// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// for compatibility with brower-based text zoom or user-set defaults.
+// $base-font-size: 100%;
+
+// // Set your base font-size in pixels so emCalc can do its magic below
+// $em-base: 16px;
+
+// We use these to control various global styles
+$body-bg: #fdfdfd;
+$body-font-color: #172625;
+// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+// $body-font-weight: normal;
+// $body-font-style: normal;
+
+// We use these to control text direction settings
+// $text-direction: ltr;
+
+// We use these as default colors throughout
+$primary-color: #24615B;
+$secondary-color: #e9e9e9;
+// $alert-color: #c60f13;
+// $success-color: #5da423;
+
+// We use these to make sure border radius matches unless we want it different.
+// $global-radius: 3px;
+// $global-rounded: 1000px;
+
+
+//
+// Top Bar Variables
+//
+
+// Background color for the top bar
+$topbar-bg: #F7F1D2 !default;
+
+// Height and margin
+// $topbar-height: 45px !default;
+// $topbar-margin-bottom: emCalc(30px) !default;
+
+// Control Input height for top bar
+// $topbar-input-height: 2.45em !default;
+
+// Controlling the styles for the title in the top bar
+// $topbar-title-weight: bold !default;
+// $topbar-title-font-size: emCalc(17px) !default;
+
+// // Set the link colors and styles for top-level nav
+ $topbar-link-color: #172625 !default;
+// $topbar-link-weight: bold !default;
+// $topbar-link-font-size: emCalc(13px) !default;
+ $topbar-link-hover-lightness: -5% !default; // Darken by 30%
+
+// // Style the top bar dropdown elements
+ $topbar-dropdown-bg: #F7F1D2 !default;
+ $topbar-dropdown-link-color: #172625 !default;
+// $topbar-dropdown-toggle-size: 5px !default;
+ $topbar-dropdown-toggle-color: darken(#F7F1D2, 50%)  !default;
+ $topbar-dropdown-toggle-alpha: 0.8 !default;
+// $dropdown-label-color: #555 !default;
+
+// // Top menu icon styles
+// $topbar-menu-link-transform: uppercase !default;
+// $topbar-menu-link-font-size: emCalc(13px) !default;
+// $topbar-menu-link-weight: bold !default;
+ $topbar-menu-link-color: #172625 !default;
+ $topbar-menu-icon-color: #172625 !default;
+ $topbar-menu-link-color-toggled: darken(#F7F1D2, 50%) !default;
+ $topbar-menu-icon-color-toggled: darken(#F7F1D2, 50%) !default;
+
+// // Transitions and breakpoint styles
+// $topbar-transition-speed: 300ms !default;
+// $topbar-breakpoint: emCalc(940px) !default; // Change to 9999px for always mobile layout
+// $topbar-media-query: "only screen and (min-width:"#{$topbar-breakpoint}")" !default;
+

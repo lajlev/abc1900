@@ -7,7 +7,7 @@
 <footer class="row full-width" role="contentinfo">
 	<div class="small-12 large-4 columns">
 		<hr>
-		<p>&copy; <?php echo date('Y'); ?> Aarhus Beachvolley Club 1900</p>
+		<small>&copy; <?php echo date('Y'); ?> Aarhus Beachvolley Club 1900</small>
 	</div>
 	
 	<div class="small-12 large-8 columns">
