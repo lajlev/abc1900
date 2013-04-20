@@ -11,8 +11,12 @@ get_header(); ?>
 	<?php while (have_posts()) : the_post(); ?>
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
+				<?php
+				if ( has_post_thumbnail() ) {
+					the_post_thumbnail('<single-post-thumbnail></single-post-thumbnail>'); 
+				}
+				?>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php reverie_entry_meta(); ?>
 			</header>
 			<div class="entry-content">
 				<?php the_content(); ?>
@@ -21,7 +25,6 @@ get_header(); ?>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
-			<?php comments_template(); ?>
 		</article>
 	<?php endwhile; // End the loop ?>
 

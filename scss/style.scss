@@ -12,21 +12,45 @@
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 
-/* Start to customizing */
+// Modules
+@import "modules/all";
+
+///////////////////////
+// Foundation tweaks //
+///////////////////////
+
+header[role="banner"] {
+	img {
+		width: 80px; height: 80px;
+		float: left;
+		margin: 20px;
+	}
+}
+
+// Topbar 
 .top-bar-section .dropdown li a {
 	padding-top: 17px;
 }
 
-.top-bar input[type="text"] {
-	width: 11em;
+.top-bar-section li a:not(.button):hover {
+	background: lighten($primary-color, 25%);
 }
 
 .contain-to-grid .top-bar {
 	margin-bottom: 40px;
 }
 
+.top-bar {
+	input[type="text"] {
+		background: lighten(#E6DB91, 8%);
+		border: none;
+		color: #172625; }
 
-
+	::-webkit-input-placeholder {
+		color: darken(#E6DB91, 10%);
+		text-shadow: 0px 1px 1px lighten(#E6DB91, 40%);
+	}
+}
 
 
 // adjusting header

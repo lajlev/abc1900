@@ -7,6 +7,7 @@
 //
 // Variables
 //
+//Colors inspired by http://www.colourlovers.com/palette/496170/All_in_All
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with brower-based text zoom or user-set defaults.
@@ -16,7 +17,7 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-$body-bg: #fdfdfd;
+$body-bg: lighten(#E6DB91, 26%);
 $body-font-color: #172625;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -26,7 +27,7 @@ $body-font-color: #172625;
 // $text-direction: ltr;
 
 // We use these as default colors throughout
-$primary-color: #24615B;
+$primary-color: #5795D0;
 $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -41,7 +42,7 @@ $secondary-color: #e9e9e9;
 //
 
 // Background color for the top bar
-$topbar-bg: #F7F1D2 !default;
+$topbar-bg: lighten(#E6DB91, 12%) !default;
 
 // Height and margin
 // $topbar-height: 45px !default;
@@ -64,8 +65,8 @@ $topbar-bg: #F7F1D2 !default;
  $topbar-dropdown-bg: #F7F1D2 !default;
  $topbar-dropdown-link-color: #172625 !default;
 // $topbar-dropdown-toggle-size: 5px !default;
- $topbar-dropdown-toggle-color: darken(#F7F1D2, 50%)  !default;
- $topbar-dropdown-toggle-alpha: 0.8 !default;
+ $topbar-dropdown-toggle-color: #000  !default;
+ $topbar-dropdown-toggle-alpha: 0.4 !default;
 // $dropdown-label-color: #555 !default;
 
 // // Top menu icon styles

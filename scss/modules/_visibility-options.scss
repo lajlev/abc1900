@@ -1,0 +1,23 @@
+.show-for-960-up {
+  @media (max-width: 960px) {
+    display: none;
+  }
+}
+
+.hide-for-960-up {
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.show-for-520-up {
+  @media (max-width: 520px) {
+    display: none;
+  }
+}
+
+.hide-for-520-up {
+  @media (min-width: 520px) {
+    display: none;
+  }
+}
