@@ -27,6 +27,10 @@ header[role="banner"] {
 	}
 }
 
+.orbit-timer, .orbit-next, .orbit-prev, .orbit-slide-number {
+	display: none;
+}
+
 // Topbar 
 .top-bar-section .dropdown li a {
 	padding-top: 17px;
@@ -38,6 +42,10 @@ header[role="banner"] {
 
 .contain-to-grid .top-bar {
 	margin-bottom: 40px;
+}
+
+.vspace-bottom {
+	margin-bottom: 3em;
 }
 
 .top-bar {
@@ -52,6 +60,79 @@ header[role="banner"] {
 	}
 }
 
+// Facebook iframe
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  border: none !important;
+}
+.fb_iframe_widget {
+	border: 1px solid #ddd !important;	
+}
+
+
+//Court Overview
+
+table.court-overview {
+	width: 100%;
+
+	td.day {
+		h3 {
+			margin-top: 1em;
+			margin-bottom: .5em;
+		}
+	}
+
+	tr.subtle > td {
+		color: #aaa;
+		text-align: center;
+		border-left: 1px solid #ddd;
+
+		&:first-child {
+			text-align: left;
+			border-left: none;
+		}
+	}
+
+	tr td[class^="men"], tr td[class^="woman"], tr td[class^="youth"], tr td[class^="mix"], tr td[class^="liga"] {
+		border: 1px solid #fff; }
+
+	tr td:last-child {
+		border-right: none;
+	}
+
+	tr.bottom td {
+		border-bottom: none;
+	}
+
+	td > span {
+		color: rgba(0, 0, 0, .4); }
+
+	$court-men-color: #99ccff;
+	$court-woman-color: #ff99cc;
+	$court-youth-color: #ccff99;
+	$court-mix-color: #ffcc99;
+	$court-liga-color: #ffff99;
+	.men1 { background: $court-men-color;}
+	.men2 { background: lighten($court-men-color, 5%);}
+	.men3 { background: lighten($court-men-color, 8%);}
+	.men4 { background: lighten($court-men-color, 11%);}
+	.men5 { background: lighten($court-men-color, 14%);}
+	.woman1 { background: $court-woman-color;}
+	.woman2 { background: lighten($court-woman-color, 5%);}
+	.woman3 { background: lighten($court-woman-color, 8%);}
+	.woman4 { background: lighten($court-woman-color, 11%);}
+	.woman5 { background: lighten($court-woman-color, 14%);}
+	.youth1 { background: $court-youth-color;}
+	.mix1 { background: $court-mix-color;}
+	.liga { background: $court-liga-color;}
+}
 
 // adjusting header
 h4.subheader {

@@ -3,11 +3,12 @@
 <div class="row full-width">
 	<?php dynamic_sidebar("Footer"); ?>
 </div>
-
+<hr>
 <footer class="row full-width" role="contentinfo">
 	<div class="small-12 large-4 columns">
-		<hr>
-		<small>&copy; <?php echo date('Y'); ?> Aarhus Beachvolley Club 1900</small>
+		<p>
+			<small>&copy; <?php echo date('Y'); ?> Aarhus Beachvolley Club 1900</small>	
+		</p>
 	</div>
 	
 	<div class="small-12 large-8 columns">

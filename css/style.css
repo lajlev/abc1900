@@ -5121,6 +5121,10 @@ header[role="banner"] img {
   margin: 20px;
 }
 
+.orbit-timer, .orbit-next, .orbit-prev, .orbit-slide-number {
+  display: none;
+}
+
 .top-bar-section .dropdown li a {
   padding-top: 17px;
 }
@@ -5133,6 +5137,10 @@ header[role="banner"] img {
   margin-bottom: 40px;
 }
 
+.vspace-bottom {
+  margin-bottom: 3em;
+}
+
 .top-bar input[type="text"] {
   background: #eee6b2;
   border: none;
@@ -5141,6 +5149,89 @@ header[role="banner"] img {
 .top-bar ::-webkit-input-placeholder {
   color: #ddcd67;
   text-shadow: 0px 1px 1px white;
+}
+
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
+#fb-root {
+  display: none;
+}
+
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+  border: none !important;
+}
+
+.fb_iframe_widget {
+  border: 1px solid #ddd !important;
+}
+
+table.court-overview {
+  width: 100%;
+}
+table.court-overview td.day h3 {
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+table.court-overview tr.subtle > td {
+  color: #aaa;
+  text-align: center;
+  border-left: 1px solid #ddd;
+}
+table.court-overview tr.subtle > td:first-child {
+  text-align: left;
+  border-left: none;
+}
+table.court-overview tr td[class^="men"], table.court-overview tr td[class^="woman"], table.court-overview tr td[class^="youth"], table.court-overview tr td[class^="mix"], table.court-overview tr td[class^="liga"] {
+  border: 1px solid #fff;
+}
+table.court-overview tr td:last-child {
+  border-right: none;
+}
+table.court-overview tr.bottom td {
+  border-bottom: none;
+}
+table.court-overview td > span {
+  color: rgba(0, 0, 0, 0.4);
+}
+table.court-overview .men1 {
+  background: #99ccff;
+}
+table.court-overview .men2 {
+  background: #b3d9ff;
+}
+table.court-overview .men3 {
+  background: #c2e0ff;
+}
+table.court-overview .men4 {
+  background: #d1e8ff;
+}
+table.court-overview .men5 {
+  background: #e0f0ff;
+}
+table.court-overview .woman1 {
+  background: #ff99cc;
+}
+table.court-overview .woman2 {
+  background: #ffb3d9;
+}
+table.court-overview .woman3 {
+  background: #ffc2e0;
+}
+table.court-overview .woman4 {
+  background: #ffd1e8;
+}
+table.court-overview .woman5 {
+  background: #ffe0f0;
+}
+table.court-overview .youth1 {
+  background: #ccff99;
+}
+table.court-overview .mix1 {
+  background: #ffcc99;
+}
+table.court-overview .liga {
+  background: #ffff99;
 }
 
 h4.subheader, ol.commentlist cite.subheader.fn {
