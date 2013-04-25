@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome and glad you are using Reverie.
  * This is the main stylesheet loaded by default.
  * Edit the file and have fun.
@@ -5209,6 +5210,10 @@ table.court-overview [class^="mix"] {
 }
 table.court-overview .liga {
   background: #ffff99;
+}
+
+.subtle {
+  color: #d0d0d0;
 }
 
 h4.subheader, ol.commentlist cite.subheader.fn {

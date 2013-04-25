@@ -31,7 +31,7 @@ header[role="banner"] {
 	display: none;
 }
 
-// Topbar 
+// Topbar
 .top-bar-section .dropdown li a {
 	padding-top: 17px;
 }
@@ -66,14 +66,14 @@ header[role="banner"] {
 #fb-root {
   display: none;
 }
- 
+
 /* To fill the container and nothing else */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
   width: 100% !important;
   border: none !important;
 }
 .fb_iframe_widget {
-	border: 1px solid #ddd !important;	
+	border: 1px solid #ddd !important;
 }
 
 
@@ -101,7 +101,7 @@ table.court-overview {
 	}
 
 	tr td[class^="men"], tr td[class^="woman"], tr td[class^="youth"], tr td[class^="mix"], tr td[class^="liga"] {
-		border: 1px solid #fff; 
+		border: 1px solid #fff;
 		text-align: center;
 	}
 
@@ -127,6 +127,14 @@ table.court-overview {
 	[class^="mix"] { background: $court-mix-color;}
 	.liga { background: $court-liga-color;}
 }
+
+.subtle {
+	color: darken($secondary-color, 10%);
+}
+
+
+
+
 
 // adjusting header
 h4.subheader {
@@ -206,7 +214,7 @@ img.alignright {
 	float: right;
 	margin: 0 0 18px 18px;
 }
-	
+
 img.alignleft {
 	float: left;
 	margin: 0 18px 18px 0;
