@@ -73,26 +73,24 @@ get_header(); ?>
         <?php
             $query = array(
               'category__in' => array(1),
-              'posts_per_page'  => 6,
+              'posts_per_page'  => 3,
             );
             query_posts($query);
           if ( have_posts() ) : while ( have_posts() ) : the_post();
         ?>
 
         <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h5>
-
         <p>
-          <span class="subtle">af <?php the_author() ?> for <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' siden'; ?></span>
+          <span class="subtle">Skrevet af <?php the_author() ?> for <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' siden'; ?>.</span>
           <br>
-        <?php truncate( get_the_excerpt(), 200); ?>
-
+          <?php truncate( get_the_excerpt(), 200); ?> <a href="<a href="<?php the_permalink() ?>">Læs mere</a>.
          </p>
         <hr>
 
         <?php endwhile; else: echo('No news today'); endif;
           wp_reset_query();
         ?>
-
+        <a href="/?cat=1" class="button secondary small">Læs flere nyheder</a>
       </div>
 
       <div class="columns large-4">

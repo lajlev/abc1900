@@ -5139,7 +5139,7 @@ header[role="banner"] img {
 }
 
 .vspace-bottom {
-  margin-bottom: 3em;
+  margin-bottom: 3em !important;
 }
 
 .top-bar input[type="text"] {
@@ -5213,7 +5213,8 @@ table.court-overview .liga {
 }
 
 .subtle {
-  color: #d0d0d0;
+  color: darkgrey;
+  font-weight: 300;
 }
 
 h4.subheader, ol.commentlist cite.subheader.fn {

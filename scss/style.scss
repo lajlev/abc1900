@@ -45,7 +45,7 @@ header[role="banner"] {
 }
 
 .vspace-bottom {
-	margin-bottom: 3em;
+	margin-bottom: 3em !important;
 }
 
 .top-bar {
@@ -129,10 +129,9 @@ table.court-overview {
 }
 
 .subtle {
-	color: darken($secondary-color, 10%);
+	color: darken($secondary-color, 25%);
+	font-weight: 300;
 }
-
-
 
 
 
