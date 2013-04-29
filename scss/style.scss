@@ -40,12 +40,12 @@ header[role="banner"] {
 	background: lighten($primary-color, 25%);
 }
 
-.contain-to-grid .top-bar {
-	margin-bottom: 40px;
+.top-bar-section .dropdown li a.parent-link {
+	font-weight: bold;
 }
 
-.vspace-bottom {
-	margin-bottom: 3em !important;
+.back.js-generated h5 {
+	font-size: 0.8125em;
 }
 
 .top-bar {
@@ -59,6 +59,18 @@ header[role="banner"] {
 		text-shadow: 0px 1px 1px lighten(#E6DB91, 40%);
 	}
 }
+
+.contain-to-grid .top-bar {
+	margin-bottom: 40px;
+}
+
+
+
+.vspace-bottom {
+	margin-bottom: 3em !important;
+}
+
+
 
 // Facebook iframe
 

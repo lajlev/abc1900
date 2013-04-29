@@ -12,7 +12,7 @@
       index : 0,
       stickyClass : 'sticky',
       custom_back_text: true,
-      back_text: 'Back',
+      back_text: 'Tilbage',
       init : false
     },
 
@@ -161,7 +161,8 @@
       this.settings.$section.find('.has-dropdown>a').each(function () {
         var $link = $(this),
             $dropdown = $link.siblings('.dropdown'),
-            $titleLi = $('<li class="title back js-generated"><h5><a href="#"></a></h5></li>');
+            //$titleLi = $('<li class="title back js-generated"><h5><a href="#"></a></h5></li>');
+            $titleLi = $('<li class="title back js-generated"><h5><a href=\"#\"></a></h5></li><li><a class="parent-link js-generated" href=\"' + $link.attr('href')+ '\">' + $link.text() +' »</a></li>');
 
         // Copy link to subnav
         if (self.settings.custom_back_text == true) {
