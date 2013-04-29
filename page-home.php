@@ -83,7 +83,7 @@ get_header(); ?>
         <p>
           <span class="subtle">Skrevet af <?php the_author() ?> for <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' siden'; ?>.</span>
           <br>
-          <?php truncate( get_the_excerpt(), 200); ?> <a href="<a href="<?php the_permalink() ?>">Læs mere</a>.
+          <?php truncate( get_the_excerpt(), 200); ?> <a href="<?php the_permalink() ?>">Læs mere</a>.
          </p>
         <hr>
 

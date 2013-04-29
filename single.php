@@ -17,10 +17,13 @@
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
 				<p><?php the_tags(); ?></p>
 			</footer>
-			<?php //comments_template(); ?>
-		</article>
-	<?php endwhile; // End the loop ?>
 
+		</article>
+		<? if (comments_open()){ ?>
+			<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="470" data-num-posts="10"></div>
+			<?php //comments_template(); ?>
+		<? } ?>
+	<?php endwhile; // End the loop ?>
 	</div>
 	<?php get_sidebar(); ?>
 

@@ -22,6 +22,7 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/img/devices/abc-icon-retina.png" />
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/devices/abc-icon.png" />
 
+	<meta property="fb:app_id" content="112787928922252"/>
 	<!-- Enable Startup Image for iOS Home Screen Web App -->
 	<!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
 	<!-- <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/mobile-load.png" /> -->
@@ -44,7 +45,7 @@
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=112787928922252";
+	  js.src = "//connect.facebook.net/da_DK/all.js#xfbml=1&appId=112787928922252";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
 </script>
@@ -82,7 +83,7 @@
 	        ) );
 	    ?>
 	    <ul class="right">
-	    	
+
 	    	<li class="has-form"><?php get_search_form(); ?></li>
 	    </ul>
 	    </section>
