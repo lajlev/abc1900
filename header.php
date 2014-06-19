@@ -10,6 +10,9 @@
 
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 
+	<meta charset="<?php bloginfo('charset'); ?>">
+	<meta name="description" content="ABC er Danmarks største beachvolleyklub. Med over 500 medlemmer og 20 baner, så har vi mulighed for at give dig beachvolley i Århus året rundt.">
+
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width" />
 
