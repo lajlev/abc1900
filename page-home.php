@@ -67,13 +67,13 @@ get_header(); ?>
     </div>
 
     <div class="row">
-      <div class="columns large-4">
+      <div class="columns large-6">
         <h3>Nyheder</h3>
 
         <?php
             $query = array(
               'category__in' => array(1),
-              'posts_per_page'  => 3,
+              'posts_per_page'  => 4,
             );
             query_posts($query);
           if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -98,9 +98,9 @@ get_header(); ?>
           <script type="text/javascript" src="https://www.conventus.dk/dataudv/www/kalender.php?type_ikon=0&niveau_ikon=0&mos=1&kort_dato=0&dato=1&dato_tidspunkt=1&tidspunkt=0&kort_tid=0&titel=1&sted=1&klikbar=1&tid=2&niveau=1&gruppe=&gruppe_type=2&rss=0&smal=1&typo_dato_tid=31216&typo_titel=31218&typo_sted=31215&foreningsid=5286"></script>
       </div> -->
 
-      <div class="columns large-8">
+      <div class="columns large-6">
         <h3>Facebook side</h3>
-        <div class="fb-like-box" data-href="https://www.facebook.com/abcaarhus" data-width="400" data-height="600" data-show-faces="false" data-stream="true" data-show-border="false" data-header="false"></div>
+        <div class="fb-like-box" data-href="https://www.facebook.com/abcaarhus" data-width="400" data-height="800" data-show-faces="false" data-stream="true" data-show-border="false" data-header="false"></div>
       </div>
 
     </div>
