@@ -9,9 +9,19 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 
 	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
-
 	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta name="description" content="ABC er Danmarks største beachvolleyklub. Med over 500 medlemmer og 20 baner, så har vi mulighed for at give dig beachvolley i Århus året rundt.">
+	
+	<?php if ( is_front_page() ) { // If forside ?>
+		<meta name="description" content="ABC er Danmarks største beachvolleyklub. Med over 500 medlemmer og 20 baner, så har vi mulighed for at give dig beachvolley i Århus året rundt.">
+	<?php } $meta_description = get_post_meta($post->ID, "meta_description", true); ?>
+		<script>
+			console.log("<?php echo $meta_description; ?>");
+		</script>
+
+
+
+		
+
 
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width" />
@@ -26,17 +36,6 @@
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/devices/abc-icon.png" />
 
 	<meta property="fb:app_id" content="112787928922252"/>
-	<!-- Enable Startup Image for iOS Home Screen Web App -->
-	<!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
-	<!-- <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/mobile-load.png" /> -->
-
-	<!-- Startup Image iPad Landscape (748x1024) -->
-	<!-- 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" /> -->
-	<!-- Startup Image iPad Portrait (768x1004) -->
-	<!-- <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" /> -->
-	<!-- Startup Image iPhone (320x460) -->
-	<!-- <link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" /> -->
-
 <?php wp_head(); ?>
 
 </head>
