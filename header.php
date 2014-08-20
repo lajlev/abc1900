@@ -38,6 +38,39 @@
 	<meta property="fb:app_id" content="112787928922252"/>
 <?php wp_head(); ?>
 
+	<style>
+		html {
+			background: url(/abctest/wp-content/themes/abc1900-foundation/img/bg.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+		}
+
+		body {
+			background: none;
+		}
+
+		header,
+		.container,
+		footer {
+			background: rgba(255, 254, 253, .9)
+		}
+
+		section.container.row {
+			padding-top: 2em;
+		}
+
+		.contain-to-grid .top-bar {
+			margin-bottom: 0;
+		}
+
+		footer {
+			padding-top: 3em;
+		}
+
+	</style>
+
 </head>
 
 <body <?php body_class(); ?>>
