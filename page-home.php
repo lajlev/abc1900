@@ -20,11 +20,7 @@ get_header(); ?>
 
 
       <div class="columns large-4">
-        <h3>Aarhus Mesterskaberne</h3>
-        <p>Som afrunding på en god sæson afholder vi Aarhus mesterskaberne 23.-24. august 2014</p>
-        <p>
-          <a href="/?page_id=237" class="button round secondary">Læs mere</a>
-        </p>
+        
       </div>
     </div>
 
