@@ -20,7 +20,7 @@
   </div>
   <div class="columns large-4">
     <p>
-      © Aarhus Beachvolley Club 1900
+      © Aarhus Beachvolley Club
     </p>
   </div>
 

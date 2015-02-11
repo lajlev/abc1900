@@ -14,13 +14,8 @@
 	<?php if ( is_front_page() ) { // If forside ?>
 		<meta name="description" content="ABC er Danmarks største beachvolleyklub. Med over 500 medlemmer og 20 baner, så har vi mulighed for at give dig beachvolley i Århus året rundt.">
 	<?php } $meta_description = get_post_meta($post->ID, "meta_description", true); ?>
-		<script>
-			console.log("<?php echo $meta_description; ?>");
-		</script>
 
 
-
-		
 
 
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
@@ -98,7 +93,7 @@
 	<nav class="top-bar">
 	    <ul class="title-area hide-for-960-up">
 	        <li class="name">
-	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><span class="show-for-520-up"><?php bloginfo( 'name' ); ?></span><span class="hide-for-520-up">ABC 1900</span></a></h1>
+	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><span class="show-for-520-up"><?php bloginfo( 'name' ); ?></span><span class="hide-for-520-up">Aarhus Beachvolley Club</span></a></h1>
 	        </li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
