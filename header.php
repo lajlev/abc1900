@@ -60,6 +60,11 @@
 			margin-bottom: 0;
 		}
 
+		.text-align-center {
+			padding-top: 1em;
+			text-align: center;
+		}
+
 		footer {
 			padding-top: 3em;
 		}
